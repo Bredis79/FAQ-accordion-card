@@ -1,0 +1,133 @@
+:root {
+    /* ## Colors
+
+    ### Primary
+    
+    #### Text */
+    
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    
+    /* #### Gradient */
+    
+    /* Background gradient: */
+    
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    
+    /* ### Neutral
+    
+    #### Text */
+    
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    
+    /* #### Dividers */
+    
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 920px;
+    height: 510px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: bottom -140px right 75px; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.firstImg{
+    margin-top: 70px;
+    margin-left: -85px;
+}
+
+.secondImg{
+    margin-left: -480px;
+    position: absolute;
+    margin-top: 205px;
+}
+
+
+
+.faq {
+    width: 50%;
+    height: 100%;
+    margin-left: 40px
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    width: 78%;
+    padding: 16px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    color: var(--Very-dark-grayish-blue);
+
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+span{
+    margin-right: 10px;
+
+}
+
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+footer {
+   
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
