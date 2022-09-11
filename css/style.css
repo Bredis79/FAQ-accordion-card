@@ -191,11 +191,11 @@ footer {
     .image {
         width: 238px;
         background-image: url("../images/bg-pattern-mobile.svg");
-        background-position: bottom 30px right 0; 
+        background-position: bottom 83px right 0; 
         z-index: 10;
         background-repeat: no-repeat;
         overflow: visible;
-    
+        position: static;
     }
 
     .firstImg{
@@ -204,7 +204,7 @@ footer {
        justify-content: center;
        height: 50vh;
        margin: 0 auto;
-       margin-top: -170px;
+       margin-top: -227px;
     }
     
     .hide {
