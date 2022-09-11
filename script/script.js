@@ -38,6 +38,7 @@ for(let i = 0; i < arrow.length; i++){  //loop for arrow
             arrow[i].classList.toggle("arrow")
         } else {
             h2[k].classList.remove("bold")
+            arrow[i].classList.remove("arrow")
         }
 
 
