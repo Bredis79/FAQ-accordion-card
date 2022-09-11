@@ -31,7 +31,6 @@ for(let i = 0; i < arrow.length; i++){  //loop for arrow
             p[j].classList.toggle("active")
         } else {
              p[j].classList.remove("active")
-             arrow[i].classList.remove("arrow")
         }
 
         if(arrow[i].id === h2[k].id){
@@ -39,7 +38,7 @@ for(let i = 0; i < arrow.length; i++){  //loop for arrow
             arrow[i].classList.toggle("arrow")
         } else {
             h2[k].classList.remove("bold")
-            
+            arrow.classList.remove("arrow")
         }
 
 
