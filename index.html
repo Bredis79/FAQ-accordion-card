@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
 
@@ -20,8 +21,12 @@
 <body>
   <main>
     <div class="image">
-      <img src="./images/illustration-woman-online-desktop.svg" class="firstImg" alt="ilustration woman">
-      <img src="./images/illustration-box-desktop.svg" class="secondImg" alt="">
+      <img src="./images/illustration-woman-online-desktop.svg" class="firstImg visible" alt="ilustration woman">
+      <img src="./images/illustration-box-desktop.svg" class="secondImg visible" alt="ilustration box">
+      <img src="./images/illustration-woman-online-mobile.svg" class="firstImg hide" alt="ilustration woman">
+
+
+
     </div>
 
     <section class="faq">
@@ -29,22 +34,28 @@
         <h1>FAQ</h1>
       </header>
 
-      <h2>How many team members can I invite?<span name="1"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span></h2>
+      <h2 id="1">How many team members can I invite?<span id="1"><img src="./images/icon-arrow-down.svg"
+            alt="icon-arrow"></span></h2>
       <p class="hidden" id="1"> You can invite up to 2 additional users on the Free plan. There is no limit on
         team members for the Premium plan.</p>
 
-      <h2>What is the maximum file upload size?<span><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span></h2>
-      <p class="hidden"> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      <h2 id="2">What is the maximum file upload size?<span id="2"><img src="./images/icon-arrow-down.svg"
+            alt="icon-arrow"></span></h2>
+      <p class="hidden" id="2"> No more than 2GB. All files in your account must fit your allotted storage space.</p>
 
-      <h2>How do I reset my password?<span id="3333"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span></h2>
-      <p class="hidden" id="3333">Click “Forgot password” from the login page or “Change password” from your profile page.
+      <h2 id="3">How do I reset my password?<span id="3"><img src="./images/icon-arrow-down.svg"
+            alt="icon-arrow"></span></h2>
+      <p class="hidden" id="3">Click “Forgot password” from the login page or “Change password” from your profile page.
         A reset link will be emailed to you.</p>
 
-      <h2>Can I cancel my subscription?<span><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span></h2>
-      <p class="hidden">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      <h2 id="4">Can I cancel my subscription?<span id="4"><img src="./images/icon-arrow-down.svg"
+            alt="icon-arrow"></span></h2>
+      <p class="hidden" id="4">Yes! Send us a message and we’ll process your request no questions asked.</p>
 
-      <h2>Do you provide additional support?<span><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span></h2>
-      <p class="hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      <h2 id="5">Do you provide additional support?<span id="5"><img src="./images/icon-arrow-down.svg"
+            alt="icon-arrow"></span></h2>
+      <p class="hidden" id="5">Chat and email support is available 24/7. Phone lines are open during normal business
+        hours.</p>
     </section>
 
 
@@ -54,7 +65,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Bredis79">Luboš Bräth</a>.
     </div>
   </footer>
 

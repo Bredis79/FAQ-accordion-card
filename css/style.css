@@ -51,25 +51,32 @@ body {
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-size: contain;
+
+    padding: 50px;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 920px;
-    height: 510px;
+    width: 100%;
+   
+    max-width: 76.666rem;
+    height: 42.5rem;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 23px 41px -2px var(--Dark-grayish-blue);
 }
 
 .image {
     width: 50%;
     height: 100%;
     background-image: url("../images/bg-pattern-desktop.svg");
-    background-position: bottom -140px right 75px; 
+    background-position: bottom -144px right 46px; 
     background-repeat: no-repeat;
     overflow: hidden;
+    position: static;
+
 }
 
 .firstImg{
@@ -81,14 +88,17 @@ main {
     margin-left: -480px;
     position: absolute;
     margin-top: 205px;
+    z-index: 10;
 }
 
-
+.hide {
+    display: none;
+}
 
 .faq {
     width: 50%;
     height: 100%;
-    margin-left: 40px
+    margin-left: 40px;
 }
 
 h1 {
@@ -111,6 +121,11 @@ h2 {
   
 }
 
+h2:hover {
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
 span{
     margin-right: 10px;
 
@@ -119,15 +134,121 @@ span{
 .hidden {
     display: none;
 }
+
 .active {
     display: block;
+    color: var(--Dark-grayish-blue);
+    width: 79%;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    line-height: 1.5rem;
+    padding-bottom: 15px;
+    margin-top: -5px;
+}
+
+.active:last-child {
+    border: none;
+}
+
+.bold {
+    color: var(--Very-dark-desaturated-blue);
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+h2.bold:hover{
+    color: var(--Very-dark-desaturated-blue);
+} 
+
+.arrow {
+    transform: rotate(-180deg);
 }
 
 footer {
-   
+   margin-top: 10px;
 }
 
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width: 915px){
+    body {
+        min-width: 375px;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        min-width: 328px;
+        height: auto;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .image {
+        width: 238px;
+        background-image: url("../images/bg-pattern-mobile.svg");
+        background-position: bottom 30px right 0; 
+        z-index: 10;
+        background-repeat: no-repeat;
+        overflow: visible;
+    
+    }
+
+    .firstImg{
+       width: inherit;
+       display: flex;
+       justify-content: center;
+       height: 50vh;
+       margin: 0 auto;
+       margin-top: -170px;
+    }
+    
+    .hide {
+        display: block;
+    }
+    .visible {
+        display: none;
+    }
+
+    .faq {
+        width: 100%;
+        min-height: 400px;
+        margin-left: 0px;
+        margin-top: -0px;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    h2 {
+        width: 90%;
+        padding: 16px 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+        border-bottom: 1px solid var(--Light-grayish-blue);
+        color: var(--Very-dark-grayish-blue);
+    
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .active {
+        width: 90%;
+        line-height: 1.7rem;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    }
+
+    .bold {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        padding-top: 17px;
+    }
+}
